@@ -1,4 +1,4 @@
-console.log(25);
+console.log(26);
 let sc = [255,255,255];
 let pc = [255,255,255];
 let input, button;
@@ -16,7 +16,7 @@ function setup(){
   input.position(20, 65);
   button = createButton('submit');
   button.position(input.x + input.width, 65);
-  //button.mousePressed(greet);
+  button.mousePressed(greet);
   greet();
 }
 function draw(){
