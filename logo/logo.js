@@ -1,7 +1,7 @@
 console.log(44);
 let sc = [255,0,0];
 let pc = [255,255,255];
-let input, button;
+let input,button;
 let fc = [255,255,255];
 let cmd = '';
 let x = 300, y = 300, dir = 0;
@@ -10,17 +10,6 @@ function greet(){
   const name = input.value();
   console.log(name);
   input.value('');
-  switch(name.split(" ")[0]) {
-  case "rt":
-    dir += float(name.split(" ")[1])
-      console.log(dir);
-    break;
-  case "lt":
-    dir += float(-name.split(" ")[1])
-    break;
-  default:
-    // code block
-}
 }
 function dtb(){
   stroke(0);
@@ -29,11 +18,13 @@ function dtb(){
   rect(-10,-10,20,20);
   fill(0);
   rect(-10,-10,20,10);
-} //draw turtle
+}
+//draw turtle
 function setup(){
   createCanvas(601,601);
   input = createInput();
   input.position(700, 65);
+  input.width = 
   button = createButton('submit');
   button.position(input.x + input.width, 65);
   button.mousePressed(greet);
