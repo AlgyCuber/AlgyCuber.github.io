@@ -1,11 +1,10 @@
-console.log(44);
-let sc = [255,0,0];
+console.log(45);
+let sc = [255,255,255];
 let pc = [255,255,255];
 let input,button;
 let fc = [255,255,255];
 let cmd = '';
 let x = 300, y = 300, dir = 0;
-//let inp = createInput();
 function greet(){
   const name = input.value();
   console.log(name);
@@ -24,7 +23,7 @@ function setup(){
   createCanvas(601,601);
   input = createInput();
   input.position(700, 65);
-  input.width = 
+  input.width = 400;
   button = createButton('submit');
   button.position(input.x + input.width, 65);
   button.mousePressed(greet);
