@@ -15,7 +15,7 @@ function dtb(){
   stroke(0);
   strokeWeight(1);
   fill(sc[0],sc[1],sc[2]);
-  rect(0,0,20,20);
+  rect(10,10,20,20);
 } //draw turtle
 function setup(){
   createCanvas(601,601);
@@ -29,7 +29,7 @@ function setup(){
 function draw(){
   background(255);
   push();
-  translate(x,y);
+  translate(x-10,y-10);
   rotate(45);
   dtb();
   pop();
