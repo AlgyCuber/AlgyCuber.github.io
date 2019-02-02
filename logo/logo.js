@@ -12,10 +12,10 @@ function greet(){
   input.value('');
   switch(name.split(" ")[0]) {
   case "rt":
-    dir += name.split(" ")[1]
+    dir = name.split(" ")[1]
     break;
   case "lt":
-    dir -= name.split(" ")[1]
+    dir = -name.split(" ")[1]
     break;
   default:
     // code block
