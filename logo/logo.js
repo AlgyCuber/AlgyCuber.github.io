@@ -1,4 +1,4 @@
-console.log(15);
+console.log(16);
 let sc = [255,255,255];
 let pc = [255,255,255];
 let input, button;
@@ -20,6 +20,5 @@ function draw(){
   fill(sc[0],sc[1],sc[2]);
   rect(0,0,600,600);
   const name = input.value();
-  input.value('');
   console.log(name);
 }
