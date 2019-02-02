@@ -1,4 +1,4 @@
-console.log(39);
+console.log(40);
 let sc = [255,0,0];
 let pc = [255,255,255];
 let input, button;
@@ -10,6 +10,16 @@ function greet(){
   const name = input.value();
   console.log(name);
   input.value('');
+  switch(name.split(" ")[0]) {
+  case "rt":
+    dir += name.split(" ")[1]
+    break;
+  case "lt":
+    dir -= name.split(" ")[1]
+    break;
+  default:
+    // code block
+}
 }
 function dtb(){
   stroke(0);
@@ -30,7 +40,7 @@ function draw(){
   background(255);
   push();
   translate(x+10,y+10);
-  rotate(radians(360));
+  rotate(radians(dir));
   dtb();
   pop();
 }
