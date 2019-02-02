@@ -1,4 +1,4 @@
-console.log(16);
+console.log(17);
 let sc = [255,255,255];
 let pc = [255,255,255];
 let input, button;
@@ -12,6 +12,7 @@ function setup(){
 
   button = createButton('submit');
   button.position(input.x + input.width, 65);
+  button.mousePressed(greet);
 }
 function draw(){
   background(255);
@@ -19,6 +20,9 @@ function draw(){
   strokeWeight(1);
   fill(sc[0],sc[1],sc[2]);
   rect(0,0,600,600);
+}
+function greet(){
   const name = input.value();
   console.log(name);
+  input.value('');
 }
