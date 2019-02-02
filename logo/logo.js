@@ -1,4 +1,4 @@
-console.log(18);
+console.log(19);
 let sc = [255,255,255];
 let pc = [255,255,255];
 let input, button;
