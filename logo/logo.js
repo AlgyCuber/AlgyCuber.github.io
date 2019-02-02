@@ -1,9 +1,10 @@
-console.log(20);
+console.log(21);
 let sc = [255,255,255];
 let pc = [255,255,255];
 let input, button;
 let fc = [255,255,255];
 let cmd = '';
+let name = '';
 //let inp = createInput();
 function setup(){
   createCanvas(601,601);
@@ -22,7 +23,7 @@ function draw(){
   rect(0,0,600,600);
 }
 function greet(){
-  const name = input.value();
+  name = input.value();
   console.log(name);
-  //input.value('');
+  input.value('');
 }
