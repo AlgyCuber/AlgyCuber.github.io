@@ -4,7 +4,7 @@ let pc = [255,255,255];
 let input, button;
 let fc = [255,255,255];
 let cmd = '';
-let x=400, y = 400, dir=0;
+let x=0, y = 0, dir=0;
 //let inp = createInput();
 function greet(){
   const name = input.value();
