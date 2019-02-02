@@ -4,7 +4,7 @@ let pc = [255,255,255];
 let input, button;
 let fc = [255,255,255];
 let cmd = '';
-let x=0, y = 0, dir=0;
+let x = 300, y = 300, dir = 0;
 //let inp = createInput();
 function greet(){
   const name = input.value();
@@ -30,7 +30,7 @@ function draw(){
   background(255);
   push();
   translate(x+10,y+10);
-  rotate(frameCount/100);
+  rotate(360);
   dtb();
   pop();
 }
