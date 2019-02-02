@@ -22,7 +22,8 @@ function draw(){
   rect(0,0,600,600);
 }
 function greet(){
-  const name = input.value();
+  const name = 'hi';
+  //const name = input.value();
   console.log(name);
   input.value('');
 }
