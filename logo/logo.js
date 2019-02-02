@@ -4,7 +4,7 @@ let pc = [255,255,255];
 let input, button;
 let fc = [255,255,255];
 let cmd = '';
-let inp = createInput();
+//let inp = createInput();
 function setup(){
   createCanvas(601,601);
   input = createInput();
