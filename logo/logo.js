@@ -1,4 +1,4 @@
-console.log(40);
+console.log(41);
 let sc = [255,0,0];
 let pc = [255,255,255];
 let input, button;
@@ -26,6 +26,8 @@ function dtb(){
   strokeWeight(1);
   fill(sc[0],sc[1],sc[2]);
   rect(-10,-10,20,20);
+  fill(0);
+  rect(-10,-10,20,10);
 } //draw turtle
 function setup(){
   createCanvas(601,601);
