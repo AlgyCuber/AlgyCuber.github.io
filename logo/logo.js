@@ -1,9 +1,10 @@
-console.log(32);
+console.log(33);
 let sc = [255,0,0];
 let pc = [255,255,255];
 let input, button;
 let fc = [255,255,255];
 let cmd = '';
+let x=400, y = 400, dir=0;
 //let inp = createInput();
 function greet(){
   const name = input.value();
@@ -12,7 +13,6 @@ function greet(){
 }
 function dtb(){
   stroke(0);
-  let x=400, y = 400, dir=0;
   strokeWeight(1);
   fill(sc[0],sc[1],sc[2]);
   rect(x,y,20,20);
@@ -28,5 +28,8 @@ function setup(){
 }
 function draw(){
   background(255);
+  push();
+  rotate(45);
   dtb();
+  pop();
 }
