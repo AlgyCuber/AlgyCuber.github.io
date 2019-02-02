@@ -1,5 +1,5 @@
 console.log(32);
-let sc = [0,0,0];
+let sc = [255,0,0];
 let pc = [255,255,255];
 let input, button;
 let fc = [255,255,255];
@@ -12,11 +12,11 @@ function greet(){
 }
 function dtb(){
   stroke(0);
-  let x=400, y = 400;
+  let x=400, y = 400, dir=0;
   strokeWeight(1);
   fill(sc[0],sc[1],sc[2]);
   rect(x,y,20,20);
-}
+} //draw turtle
 function setup(){
   createCanvas(601,601);
   input = createInput();
