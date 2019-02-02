@@ -1,4 +1,4 @@
-console.log(33);
+console.log(34);
 let sc = [255,0,0];
 let pc = [255,255,255];
 let input, button;
@@ -29,6 +29,7 @@ function setup(){
 function draw(){
   background(255);
   push();
+  translate(x,y);
   rotate(45);
   dtb();
   pop();
