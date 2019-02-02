@@ -1,4 +1,4 @@
-console.log(29);
+console.log(30);
 let sc = [0,0,0];
 let pc = [255,255,255];
 let input, button;
@@ -28,4 +28,5 @@ function setup(){
 }
 function draw(){
   background(255);
+  dtb();
 }
