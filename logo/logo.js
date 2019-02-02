@@ -30,7 +30,7 @@ function draw(){
   background(255);
   push();
   translate(x-10,y-10);
-  rotate(45);
+  rotate(framecount);
   dtb();
   pop();
 }
