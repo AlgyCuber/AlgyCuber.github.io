@@ -1,4 +1,4 @@
-console.log(42);
+console.log(43);
 let sc = [255,0,0];
 let pc = [255,255,255];
 let input, button;
@@ -12,10 +12,10 @@ function greet(){
   input.value('');
   switch(name.split(" ")[0]) {
   case "rt":
-    dir = name.split(" ")[1]
+    dir += name.split(" ")[1]
     break;
   case "lt":
-    dir = -name.split(" ")[1]
+    dir += -name.split(" ")[1]
     break;
   default:
     // code block
