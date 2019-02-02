@@ -13,6 +13,7 @@ function greet(){
   switch(name.split(" ")[0]) {
   case "rt":
     dir += name.split(" ")[1]
+      console.log(dir);
     break;
   case "lt":
     dir += -name.split(" ")[1]
