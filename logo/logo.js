@@ -1,4 +1,4 @@
-console.log(30);
+console.log(31);
 let sc = [0,0,0];
 let pc = [255,255,255];
 let input, button;
@@ -15,7 +15,7 @@ function dtb(){
   let x, y = 400;
   strokeWeight(1);
   fill(sc[0],sc[1],sc[2]);
-  rect(20,20,x,y);
+  rect(x,y,20,20);
 }
 function setup(){
   createCanvas(601,601);
