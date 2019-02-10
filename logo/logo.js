@@ -1,4 +1,4 @@
-console.log(46);
+console.log(47);
 let sc = [255,255,255];
 let pc = [255,255,255];
 let input,button;
@@ -23,8 +23,8 @@ function setup(){
   createCanvas(601,601);
   input = createInput();
   input.position(700, 65);
-  //input.width = 400;
-  console.log(input.width)
+  input.width = 400;
+  console.log(input.width);
   button = createButton('submit');
   button.position(input.x + input.width, 65);
   button.mousePressed(greet);
