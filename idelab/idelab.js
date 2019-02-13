@@ -1,4 +1,4 @@
-console.log(13);
+console.log(14);
 let dark = false;
 let w = window.innerWidth;
 let h = window.innerHeight;
@@ -16,6 +16,10 @@ function draw(){
   fill(255,245,114);
   rect(0,0,w,64);
   //menu btn
+  if(mouseX>w-64 && mouseY<64){
+    fill(239,230,107);
+    rect(w-64,h,64,64)
+  }
   fill(128,128,128);
   rect(w-48,19,32,6);
   rect(w-48,29,32,6);
