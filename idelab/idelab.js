@@ -1,4 +1,4 @@
-console.log(12);
+console.log(13);
 let dark = false;
 let w = window.innerWidth;
 let h = window.innerHeight;
@@ -17,7 +17,7 @@ function draw(){
   rect(0,0,w,64);
   //menu btn
   fill(128,128,128);
-  rect(w-48,25,32,6);
+  rect(w-48,19,32,6);
   rect(w-48,29,32,6);
-  rect(w-48,33,32,6);
+  rect(w-48,39,32,6);
 }
