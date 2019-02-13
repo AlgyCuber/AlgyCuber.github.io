@@ -1,4 +1,4 @@
-console.log(10);
+console.log(11);
 let dark = false;
 let w = window.innerWidth;
 let h = window.innerHeight;
@@ -19,5 +19,5 @@ function draw(){
   fill(128,128,128);
   rect(w-48,19.1,32,6.4);
   rect(w-48,28.8,32,6.4);
-  rect(w-48,37.4,32,6.4);
+  rect(w-48,37.5,32,6.4);
 }
