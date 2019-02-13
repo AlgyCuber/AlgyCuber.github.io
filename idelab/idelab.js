@@ -1,4 +1,4 @@
-console.log(5);
+console.log(6);
 let dark = false;
 let w = window.innerWidth;
 let h = window.innerHeight;
@@ -9,6 +9,17 @@ function setup(){
   defaultCanvas0.style.top = '0px';
 }
 function draw(){
-  background((dark)?30:250);
-  rect(0,0,w,32);
+  if(dark){
+    background(40);
+    noStroke();
+    fill(255,245,114);
+    rect(0,0,w,32);
+  }
+  else{
+    background(250);
+    noStroke();
+    fill(255,245,114);
+    rect(0,0,w,32);
+  }
+  
 }
