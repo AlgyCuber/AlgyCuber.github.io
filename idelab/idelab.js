@@ -1,4 +1,4 @@
-console.log(17);
+console.log(18);
 let dark = false;
 let w = window.innerWidth;
 let h = window.innerHeight;
@@ -21,6 +21,7 @@ function draw(){
     rect(w-64,0,64,64);
     document.body.style.cursor = 'pointer';
   }
+  else{document.body.style.cursor = 'default';}
   fill(128,128,128);
   rect(w-48,19,33,6);
   rect(w-48,29,33,6);
