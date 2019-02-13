@@ -1,7 +1,7 @@
-console.log(0);
+console.log(1);
 function setup(){
-  createCanvas(window.outerWidth,window.outerHeight);
+  createCanvas(window.innerWidth,window.innerHeight);
 }
 function draw(){
-  background(255);
+  background(250);
 }
