@@ -1,4 +1,4 @@
-console.log(18);
+console.log(19);
 let dark = false;
 let w = window.innerWidth;
 let h = window.innerHeight;
@@ -15,13 +15,14 @@ function draw(){
   noStroke();
   fill(255,245,114);
   rect(0,0,w,64);
-  //menu btn
+  //mouse events
   if(mouseX>w-64 && mouseY<64){
     fill(239,230,107);
     rect(w-64,0,64,64);
     document.body.style.cursor = 'pointer';
   }
   else{document.body.style.cursor = 'default';}
+  //menu btn
   fill(128,128,128);
   rect(w-48,19,33,6);
   rect(w-48,29,33,6);
