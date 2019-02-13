@@ -1,3 +1,7 @@
 console.log(0);
-function setup(){}
-function draw(){}
+function setup(){
+  createCanvas(window.outerWidth,window.outerHeight);
+}
+function draw(){
+  background(255);
+}
