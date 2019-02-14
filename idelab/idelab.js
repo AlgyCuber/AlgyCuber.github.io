@@ -2,6 +2,8 @@ console.log(19);
 let dark = false;
 let w = window.innerWidth;
 let h = window.innerHeight;
+let t = 0; //tab : 0 = idle, 1 = lab
+let onMenu = false;
 function setup(){
   createCanvas(w,h);
   defaultCanvas0.style.position = 'absolute';
@@ -23,8 +25,16 @@ function draw(){
   }
   else{document.body.style.cursor = 'default';}
   //menu btn
-  fill(128,128,128);
+  fill(128);
   rect(w-48,19,33,6);
   rect(w-48,29,33,6);
   rect(w-48,39,33,6);
+  //menu tab
+  if(onMouse){
+    fill(160);
+    rect(w-200,64,200,800);
+  }
+}
+function mousePressed(){
+  if(mouseX>w-64 && mouseY<64){onMouse = true;}
 }
