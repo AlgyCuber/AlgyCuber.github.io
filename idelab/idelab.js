@@ -1,4 +1,4 @@
-console.log(20);
+console.log(21);
 let dark = false;
 let w = window.innerWidth;
 let h = window.innerHeight;
@@ -36,5 +36,5 @@ function draw(){
   }
 }
 function mousePressed(){
-  if(mouseX>w-64 && mouseY<64){onMenu = true;}
+  if(mouseX>w-64 && mouseY<64){onMenu = (onMenu)?false:true;}
 }
