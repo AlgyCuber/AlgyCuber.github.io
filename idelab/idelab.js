@@ -1,4 +1,4 @@
-console.log(35);
+console.log(36);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -19,13 +19,14 @@ function draw(){
     fill(255,245,114);
     rect(0,0,w,64);
     if(mouseX>0 && mouseX<64 && mouseY>0 && mouseY<64){
-      fill(255,250,194);
+      fill(255,241,92);
       rect(0,0,64,64);
     }
     if(dark){
       fill(128);
       ellipse(32,32,32,32);
-      fill(255,245,144);
+      if(mouseX>0 && mouseX<64 && mouseY>0 && mouseY<64){fill(255,245,144);}
+      else{fill(255,241,92)}
       ellipse(48,32,32,32);
     }
     else{
