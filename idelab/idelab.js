@@ -1,4 +1,4 @@
-console.log(25);
+console.log(26);
 let dark = false;
 let w = window.innerWidth;
 let h = window.innerHeight;
@@ -18,11 +18,11 @@ function draw(){
     rect(0,0,w,64);
     if(dark){
       fill(128);
-      ellipse(0,0,32,32);
+      rect(0,0,32,32);
     }
     else{
       fill(128);
-      ellipse(0,0,32,32);
+      rect(0,0,32,32);
     }
   }
   else if(t==1)
