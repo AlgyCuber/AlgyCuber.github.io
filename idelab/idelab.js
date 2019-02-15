@@ -1,4 +1,4 @@
-console.log(33);
+console.log(34);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -28,7 +28,7 @@ function draw(){
       fill(128);
       ellipse(32,32,20,20);
       for(let θ=0;θ<TAU;θ+=TAU/8){
-        triangle(32+26*cos(θ),32+26*sin(θ),32+14*cos(θ)-4/sqrt(3)*sin(θ),32+14*sin(θ)+4/sqrt(3)*cos(θ),32+14*cos(θ)+8/sqrt(3)*sin(θ),32+14*sin(θ)-8/sqrt(3)*cos(θ));
+        triangle(32+22*cos(θ),32+22*sin(θ),32+14*cos(θ)-4/sqrt(3)*sin(θ),32+14*sin(θ)+4/sqrt(3)*cos(θ),32+14*cos(θ)+8/sqrt(3)*sin(θ),32+14*sin(θ)-8/sqrt(3)*cos(θ));
       }
     }
   }
