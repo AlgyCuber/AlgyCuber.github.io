@@ -1,4 +1,4 @@
-console.log(26);
+console.log(27);
 let dark = false;
 let w = window.innerWidth;
 let h = window.innerHeight;
@@ -30,6 +30,7 @@ function draw(){
     noStroke();
     fill(255,245,114);
     rect(0,0,w,64);
+  }
 }
 function mousePressed(){
   ///
