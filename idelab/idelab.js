@@ -1,4 +1,4 @@
-console.log(27);
+console.log(28);
 let dark = false;
 let w = window.innerWidth;
 let h = window.innerHeight;
@@ -25,7 +25,7 @@ function draw(){
       rect(0,0,32,32);
     }
   }
-  else if(t==1)
+  else if(t==1){
     background((dark)?40:250);
     noStroke();
     fill(255,245,114);
