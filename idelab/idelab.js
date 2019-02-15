@@ -1,7 +1,8 @@
-console.log(30);
+console.log(31);
+const w = window.innerWidth;
+const h = window.innerHeight;
+const TAU = 2*PI;
 let dark = false;
-let w = window.innerWidth;
-let h = window.innerHeight;
 let t = 0; //tab : 0 = idle, 1 = lab, 2 = games
 let abucks = 0;
 function setup(){
@@ -25,6 +26,9 @@ function draw(){
     else{
       fill(128);
       ellipse(32,32,32,32);
+      for(let θ=0;θ<TAU;θ+=TAU/8){
+        triangle(32+26*cos(θ),32+26*sin(θ),32+22*cos(θ)-4/sqrt(3)*sin(θ),32+22*sin(θ)+4/sqrt(3)*cos(θ),32+22*cos(θ)+4/sqrt(3)*sin(θ),32+22*sin(θ)-4/sqrt(3)*cos(θ));
+      }
     }
   }
   else if(t==1){
