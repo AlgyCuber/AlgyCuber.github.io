@@ -1,9 +1,9 @@
-console.log(22);
+console.log(23);
 let dark = false;
 let w = window.innerWidth;
 let h = window.innerHeight;
 let t = 0; //tab : 0 = idle, 1 = lab, 2 = games
-let abucks = 
+let abucks = 0;
 function setup(){
   createCanvas(w,h);
   defaultCanvas0.style.position = 'absolute';
@@ -23,10 +23,6 @@ function draw(){
   }
   else if(t==1)
     background((dark)?40:250);
-    if(1){
-      ///
-    }
-    else{document.body.style.cursor = 'default';}
     noStroke();
     fill(255,245,114);
     rect(0,0,w,64);
