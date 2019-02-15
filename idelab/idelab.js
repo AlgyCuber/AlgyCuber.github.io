@@ -1,7 +1,7 @@
-console.log(31);
-const w = window.innerWidth;
-const h = window.innerHeight;
-const TAU = 2*PI;
+console.log(32);
+let w = window.innerWidth;
+let h = window.innerHeight;
+let TAU;
 let dark = false;
 let t = 0; //tab : 0 = idle, 1 = lab, 2 = games
 let abucks = 0;
@@ -10,6 +10,7 @@ function setup(){
   defaultCanvas0.style.position = 'absolute';
   defaultCanvas0.style.left = '0px';
   defaultCanvas0.style.top = '0px';
+  TAU = 2*PI;
 }
 function draw(){
   if(t==0){
