@@ -1,4 +1,4 @@
-console.log(43);
+console.log(44);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -39,9 +39,9 @@ function draw(){
       }
     }
     fill(140,222,255);
-    rect(10,74,(w-40)/3,h/2-42);
+    rect(10,74,(w-40)/3,h-84);
     rect((w-40)/3+20,74,(w-40)/3,h-84);
-    rect(2*(w-40)/3+30,74,(w-40)/3,h/84);
+    rect(2*(w-40)/3+30,74,(w-40)/3,h-84);
   }
   else if(t==1){
     background((dark)?60:240);
