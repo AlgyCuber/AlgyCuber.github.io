@@ -1,4 +1,4 @@
-console.log(46);
+console.log(47);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -43,6 +43,7 @@ function draw(){
     rect(10,74,(w-40)/3,h-84);
     rect((w-40)/3+20,74,(w-40)/3,h-84);
     rect(2*(w-40)/3+30,74,(w-40)/3,h-84);
+    ellipse(w/2,2*h/3,(w-40)/15,(w-40)/15);
   }
   else if(t==1){
     background((dark)?60:240);
