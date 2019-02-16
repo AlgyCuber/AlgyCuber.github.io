@@ -1,4 +1,4 @@
-console.log(42);
+console.log(43);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -14,7 +14,7 @@ function setup(){
 }
 function draw(){
   if(t==0){
-    background((dark)?240:40);
+    background((dark)?60:240);
     noStroke();
     fill(255,245,114);
     rect(0,0,w,64);
@@ -40,8 +40,8 @@ function draw(){
     }
     fill(140,222,255);
     rect(10,74,(w-40)/3,h/2-42);
-    rect((w-40)/3+20,74,(w-40)/3,h/2-42);
-    rect(2*(w-40)/3+30,74,(w-40)/3,h/2-42);
+    rect((w-40)/3+20,74,(w-40)/3,h-84);
+    rect(2*(w-40)/3+30,74,(w-40)/3,h/84);
   }
   else if(t==1){
     background((dark)?60:240);
