@@ -1,4 +1,4 @@
-console.log(45);
+console.log(46);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -38,7 +38,8 @@ function draw(){
         triangle(32+22*cos(θ),32+22*sin(θ),32+14*cos(θ)-4/sqrt(3)*sin(θ),32+14*sin(θ)+4/sqrt(3)*cos(θ),32+14*cos(θ)+8/sqrt(3)*sin(θ),32+14*sin(θ)-8/sqrt(3)*cos(θ));
       }
     }
-    fill((dark)?14,134,209:140,222,255);
+    if(dark){fill(14,134,209);}
+    else{fill(140,222,255);}
     rect(10,74,(w-40)/3,h-84);
     rect((w-40)/3+20,74,(w-40)/3,h-84);
     rect(2*(w-40)/3+30,74,(w-40)/3,h-84);
