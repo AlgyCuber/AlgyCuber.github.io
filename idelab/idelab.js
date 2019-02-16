@@ -1,4 +1,4 @@
-console.log(40);
+console.log(41);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -38,6 +38,10 @@ function draw(){
         triangle(32+22*cos(θ),32+22*sin(θ),32+14*cos(θ)-4/sqrt(3)*sin(θ),32+14*sin(θ)+4/sqrt(3)*cos(θ),32+14*cos(θ)+8/sqrt(3)*sin(θ),32+14*sin(θ)-8/sqrt(3)*cos(θ));
       }
     }
+    fill(140,222,255);
+    rect((w-40)/3+10,74,(w-40)/3,h/2-42);
+    rect(2*(w-40)/3+20,74,(w-40)/3,h/2-42);
+    rect(3*(w-40)/3+30,74,(w-40)/3,h/2-42);
   }
   else if(t==1){
     background((dark)?60:240);
@@ -64,10 +68,6 @@ function draw(){
         triangle(32+22*cos(θ),32+22*sin(θ),32+14*cos(θ)-4/sqrt(3)*sin(θ),32+14*sin(θ)+4/sqrt(3)*cos(θ),32+14*cos(θ)+8/sqrt(3)*sin(θ),32+14*sin(θ)-8/sqrt(3)*cos(θ));
       }
     }
-    fill(140,222,255);
-    rect((w-40)/3+10,74,(w-40)/3,h/2-42);
-    rect(2*(w-40)/3+10,74,(w-40)/3,h/2-42);
-    rect(3*(w-40)/3+10,74,(w-40)/3,h/2-42);
   }
 }
 function mousePressed(){
