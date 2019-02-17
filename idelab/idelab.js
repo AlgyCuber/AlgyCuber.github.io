@@ -55,6 +55,8 @@ function draw(){
     noStroke();
     textSize((w-40)/45);
     text('α',w/2,205/300*h);
+    fill(178,255,71);
+    
   }
   else if(t==1){
     background((dark)?60:240);
