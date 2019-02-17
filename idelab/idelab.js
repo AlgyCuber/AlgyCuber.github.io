@@ -1,4 +1,4 @@
-console.log(55);
+console.log(56);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -52,6 +52,8 @@ function draw(){
       point(((w-40)/30-10)*cos(θ)+w/2,((w-40)/30-10)*sin(θ)+2*h/3);
     }
     fill(20);
+    noStroke();
+    fontSize((w-40)/45);
     text('α',w/2,2*h/3);
   }
   else if(t==1){
