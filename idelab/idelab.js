@@ -1,4 +1,4 @@
-console.log(53);
+console.log(54);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -11,6 +11,7 @@ function setup(){
   defaultCanvas0.style.left = '0px';
   defaultCanvas0.style.top = '0px';
   TAU = 2*PI;
+  textAlign(CENTER);
 }
 function draw(){
   if(t==0){
@@ -50,6 +51,7 @@ function draw(){
     for(let θ=0;θ<TAU;θ+=TAU/64){
       point(((w-40)/30-10)*cos(θ)+w/2,((w-40)/30-10)*sin(θ)+2*h/3);
     }
+    text(w/2,2*h/3,'α');
   }
   else if(t==1){
     background((dark)?60:240);
