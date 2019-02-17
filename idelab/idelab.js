@@ -1,4 +1,4 @@
-console.log(54);
+console.log(55);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -51,7 +51,8 @@ function draw(){
     for(let θ=0;θ<TAU;θ+=TAU/64){
       point(((w-40)/30-10)*cos(θ)+w/2,((w-40)/30-10)*sin(θ)+2*h/3);
     }
-    text(w/2,2*h/3,'α');
+    fill(20);
+    text('α',w/2,2*h/3);
   }
   else if(t==1){
     background((dark)?60:240);
