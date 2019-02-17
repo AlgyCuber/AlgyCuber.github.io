@@ -1,4 +1,4 @@
-console.log(64);
+console.log(65);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -56,6 +56,7 @@ function draw(){
     textSize((w-40)/45);
     text('α',w/2,205/300*h);
     fill(54,201,86);
+    stroke(0);
     rect(w/2-(w-40)/12,h/5,(w-40)/6,h/23);
     rect(w/2-(w-40)/12,3*h/10,(w-40)/6,h/23);
   }
