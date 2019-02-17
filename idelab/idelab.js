@@ -1,10 +1,10 @@
-console.log(65);
+console.log(66);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
 let dark = false;
 let t = 0; //tab : 0 = idle, 1 = lab, 2 = games
-let abucks = 0;
+let abucks = [0];
 function setup(){
   createCanvas(w,h);
   defaultCanvas0.style.position = 'absolute';
@@ -47,13 +47,9 @@ function draw(){
     fill(255,251,50);
     stroke(0);
     ellipse(w/2,2*h/3,(w-40)/15,(w-40)/15);
-    stroke(155);
-    for(let θ=0;θ<TAU;θ+=TAU/64){
-      point(((w-40)/30-10)*cos(θ)+w/2,((w-40)/30-10)*sin(θ)+2*h/3);
-    }
     fill(20);
     noStroke();
-    textSize((w-40)/45);
+    textSize((w-40)/40);
     text('α',w/2,205/300*h);
     fill(54,201,86);
     stroke(0);
