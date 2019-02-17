@@ -1,4 +1,4 @@
-console.log(57);
+console.log(58);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -54,7 +54,7 @@ function draw(){
     fill(20);
     noStroke();
     textSize((w-40)/45);
-    text('α',w/2,2*h/3);
+    text('α',w/2,3*h/4);
   }
   else if(t==1){
     background((dark)?60:240);
