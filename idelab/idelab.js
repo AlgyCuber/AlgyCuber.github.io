@@ -1,4 +1,4 @@
-console.log(88);
+console.log(89);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -65,7 +65,7 @@ function draw(){
     textSize((w-40)/40);
     //textFont('Arial');
     text('α',w/2,205/300*h);
-    textFont(loadFont('SourceSansPro-Black.otf'));
+    //textFont(loadFont('SourceSansPro-Black.otf'));
     fill(54,201,86);
     stroke(0);
     rect(w/2-(w-40)/8,h/5,(w-40)/4,h/23);
