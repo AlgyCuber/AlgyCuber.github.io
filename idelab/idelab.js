@@ -1,4 +1,4 @@
-console.log(82);
+console.log(83);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -73,8 +73,8 @@ function draw(){
     textSize((w-40)/80)
     text(daBucks+' aBucks',w/2,h/5+h/38);
     text(aps+' aBucks per second',w/2,3*h/10+h/38);
-    textSize((w-40)/40);
-    text('POWERUPS',w-10-(w-40)/6,h/30);
+    textSize((w-40)/45);
+    text('POWERUPS',w-10-(w-40)/6,h/20);
   }
   else if(t==1){
     background((dark)?60:240);
