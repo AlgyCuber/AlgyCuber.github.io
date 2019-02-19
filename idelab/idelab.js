@@ -1,4 +1,4 @@
-console.log(85);
+console.log(86);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -15,7 +15,7 @@ function setup(){
   defaultCanvas0.style.top = '0px';
   TAU = 2*PI;
   textAlign(CENTER);
-  textFont('Source Sans Pro');
+  textFont(loadFont('SourceSansPro-Black.otf'));
 }
 function draw(){
   daBucks = '';
