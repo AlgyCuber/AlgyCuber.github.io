@@ -1,4 +1,4 @@
-console.log(67);
+console.log(68);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -44,15 +44,15 @@ function draw(){
     rect(10,74,(w-40)/3,h-84);
     rect((w-40)/3+20,74,(w-40)/3,h-84);
     rect(2*(w-40)/3+30,74,(w-40)/3,h-84);
-    fill(255,251,50);
+    if(sqrt(pow(mouseX-w/2,2)+pow(mouseY-2*h/3,2))){fill(229,225,45);}
+    else{fill(255,251,50);}
     stroke(0);
     ellipse(w/2,2*h/3,(w-40)/15,(w-40)/15);
     fill(20);
     noStroke();
     textSize((w-40)/40);
     text('α',w/2,205/300*h);
-    if(sqrt(pow(mouseX-w/2,2)+pow(mouseY-2*h/3,2))){fill(229,225,45);}
-    else{fill(54,201,86);}
+    fill(54,201,86);
     stroke(0);
     rect(w/2-(w-40)/12,h/5,(w-40)/6,h/23);
     rect(w/2-(w-40)/12,3*h/10,(w-40)/6,h/23);
