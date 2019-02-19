@@ -1,4 +1,4 @@
-console.log(71);
+console.log(72);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -103,7 +103,7 @@ function mousePressed(){
   if(mouseX>0 && mouseX<64 && mouseY>0 && mouseY<64){
     dark = (dark)?false:true;
   }
-  else if(sqrt(pow(mouseX-w/2,2)+pow(mouseY-2*h/3,2))<(w-40)/30)){
+  else if(sqrt(pow(mouseX-w/2,2)+pow(mouseY-2*h/3,2))<(w-40)/30){
     aBucks[0]++;
   }
 }
