@@ -1,10 +1,13 @@
-console.log(70);
+console.log(71);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
 let dark = false;
 let t = 0; //tab : 0 = idle, 1 = lab, 2 = games
-let abucks = [0];
+let aBucks = [0];
+let daBucks = ''; //display abucks
+let apc = 1; //aBucks per click
+let aps = 0; //aBucks per second
 function setup(){
   createCanvas(w,h);
   defaultCanvas0.style.position = 'absolute';
@@ -14,6 +17,10 @@ function setup(){
   textAlign(CENTER);
 }
 function draw(){
+  daBucks = '';
+  for(let i=0;i<aBucks.length;i++){
+    daBucks += aBucks[aBucks.length-i-1];
+  }
   if(t==0){
     background((dark)?60:240);
     //pointer
@@ -60,6 +67,10 @@ function draw(){
     stroke(0);
     rect(w/2-(w-40)/12,h/5,(w-40)/6,h/23);
     rect(w/2-(w-40)/12,3*h/10,(w-40)/6,h/23);
+    noStroke();
+    fill(0);
+    text(daBucks+' aBucks',w/2-(w-39)/12,h/5);
+    text(aps+' aBucks per second',w/2-(w-39)/12,3*h/10);
   }
   else if(t==1){
     background((dark)?60:240);
@@ -91,5 +102,8 @@ function draw(){
 function mousePressed(){
   if(mouseX>0 && mouseX<64 && mouseY>0 && mouseY<64){
     dark = (dark)?false:true;
+  }
+  else if(sqrt(pow(mouseX-w/2,2)+pow(mouseY-2*h/3,2))<(w-40)/30)){
+    aBucks[0]++;
   }
 }
