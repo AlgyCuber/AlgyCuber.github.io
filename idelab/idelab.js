@@ -1,4 +1,4 @@
-console.log(79);
+console.log(80);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -15,7 +15,7 @@ function setup(){
   defaultCanvas0.style.top = '0px';
   TAU = 2*PI;
   textAlign(CENTER);
-  textFont('Times');
+  textFont('Futura');
 }
 function draw(){
   daBucks = '';
