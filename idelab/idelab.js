@@ -1,4 +1,4 @@
-console.log(74);
+console.log(75);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -70,8 +70,8 @@ function draw(){
     noStroke();
     fill(0);
     textSize((w-40)/65)
-    text(daBucks+' aBucks',w/2,h/5+h/40);
-    text(aps+' aBucks per second',w/2,3*h/10+h/40);
+    text(daBucks+' aBucks',w/2,h/5+h/39);
+    text(aps+' aBucks per second',w/2,3*h/10+h/39);
   }
   else if(t==1){
     background((dark)?60:240);
