@@ -1,4 +1,4 @@
-console.log(69);
+console.log(68);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -16,15 +16,19 @@ function setup(){
 function draw(){
   if(t==0){
     background((dark)?60:240);
+    //pointer
+    if((mouseX>0 && mouseX<64 && mouseY>0 && mouseY<64) || (sqrt(pow(mouseX-w/2,2)+pow(mouseY-2*h/3,2))<(w-40)/30)){
+      document.body.style.cursor = 'pointer';
+    }
+    else{document.body.style.cursor = 'default';}
+    //drawings
     noStroke();
     fill(255,245,114);
     rect(0,0,w,64);
     if(mouseX>0 && mouseX<64 && mouseY>0 && mouseY<64){
       fill(255,241,92);
       rect(0,0,64,64);
-      document.body.style.cursor = 'pointer';
     }
-    else{document.body.style.cursor = 'default';}
     if(dark){
       fill(128);
       ellipse(32,32,32,32);
