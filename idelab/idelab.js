@@ -1,4 +1,4 @@
-console.log(91);
+console.log(92);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -66,8 +66,8 @@ function draw(){
     text('a',w/2,205/300*h);
     fill(54,201,86);
     stroke(0);
-    rect(w/2-(w-40)/8,h/5,(w-40)/4,h/23);
-    rect(w/2-(w-40)/8,3*h/10,(w-40)/4,h/23);
+    rect(w/2-(w-40)/8,h/5+h/20,(w-40)/4,h/23);
+    rect(w/2-(w-40)/8,3*h/10+h/20,(w-40)/4,h/23);
     noStroke();
     fill(0);
     textSize((w-40)/80)
@@ -75,6 +75,7 @@ function draw(){
     text(aps+' aBucks per second',w/2,3*h/10+h/38);
     textSize((w-40)/45);
     text('POWERUPS',w-10-(w-40)/6,h/5-h/30);
+    rect(3/8*w,13/100*h,w/100,h/100);
   }
   else if(t==1){
     background((dark)?60:240);
