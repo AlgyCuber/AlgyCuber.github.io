@@ -1,4 +1,4 @@
-console.log(95);
+console.log(96);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -6,8 +6,9 @@ let dark = false;
 let t = 0; //tab : 0 = idle, 1 = lab, 2 = games
 let aBucks = [0];
 let daBucks = ''; //display abucks
-let apc = 1; //aBucks per click
-let aps = 0; //aBucks per second
+let apc = []; //aBucks per click
+let aps = []; //aBucks per second
+let daps = ''; //display aps
 function setup(){
   createCanvas(w,h);
   defaultCanvas0.style.position = 'absolute';
@@ -19,9 +20,9 @@ function setup(){
 }
 function draw(){
   daBucks = '';
-  for(let i=0;i<aBucks.length;i++){
-    daBucks += aBucks[aBucks.length-i-1];
-  }
+  for(let i=0;i<aBucks.length;i++){daBucks += aBucks[aBucks.length-i-1];}
+  daps = '';
+  for(let i=0;i<aps.length;i++){daps += aps[aps.length-i-1];}
   if(t==0){
     background((dark)?60:240);
     //pointer
@@ -72,10 +73,10 @@ function draw(){
     fill(0);
     textSize((w-40)/80)
     text(daBucks+' aBucks',w/2,h/5+h/38+h/20);
-    text(aps+' aBucks per second',w/2,3*h/10+h/38+h/20);
+    text(daps+' aBucks per second',w/2,3*h/10+h/38+h/20);
     textSize((w-40)/45);
     text('POWERUPS',w-10-(w-40)/6,h/5-h/30);
-    rect(w/2-(w-40)/8,13/100*h,(w-40)/4,h/80);
+    //text('Power : ');
   }
   else if(t==1){
     background((dark)?60:240);
