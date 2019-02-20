@@ -1,4 +1,4 @@
-console.log(96);
+console.log(97);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -7,7 +7,7 @@ let t = 0; //tab : 0 = idle, 1 = lab, 2 = games
 let aBucks = [0];
 let daBucks = ''; //display abucks
 let apc = []; //aBucks per click
-let aps = []; //aBucks per second
+let aps = [0]; //aBucks per second
 let daps = ''; //display aps
 function setup(){
   createCanvas(w,h);
