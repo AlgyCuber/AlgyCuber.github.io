@@ -1,4 +1,4 @@
-console.log(98);
+console.log(99);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
@@ -72,8 +72,8 @@ function draw(){
     noStroke();
     fill(0);
     textSize((w-40)/80)
-    text(daBucks+' aBucks',w/2,h/5+h/38+h/20);
-    text(daps+' aBucks per second',w/2,3*h/10+h/38+h/20);
+    text(daBucks+' aBucks',w/2,h/5+h/38);
+    text(daps+' aBucks per second',w/2,3*h/10+h/38);
     textSize((w-40)/45);
     text('POWERUPS',w-10-(w-40)/6,h/5-h/30);
   }
