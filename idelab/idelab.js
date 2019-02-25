@@ -1,14 +1,14 @@
-console.log(99);
+console.log(100);
 let w = window.innerWidth;
 let h = window.innerHeight;
 let TAU;
 let dark = false;
 let t = 0; //tab : 0 = idle, 1 = lab, 2 = games
-let aBucks = [0];
-let daBucks = ''; //display abucks
-let apc = []; //aBucks per click
-let aps = [0]; //aBucks per second
-let daps = ''; //display aps
+let aBucks = 0;
+let aps = 0; //aBucks per second
+let pups = { //powerups
+  cookies:0
+};
 function setup(){
   createCanvas(w,h);
   defaultCanvas0.style.position = 'absolute';
@@ -19,10 +19,6 @@ function setup(){
   textFont(loadFont('SourceSansPro-Black.otf'));
 }
 function draw(){
-  daBucks = '';
-  for(let i=0;i<aBucks.length;i++){daBucks += aBucks[aBucks.length-i-1];}
-  daps = '';
-  for(let i=0;i<aps.length;i++){daps += aps[aps.length-i-1];}
   if(t==0){
     background((dark)?60:240);
     //pointer
@@ -57,7 +53,8 @@ function draw(){
     rect(10,74,(w-40)/3,h-84);
     rect((w-40)/3+20,74,(w-40)/3,h-84);
     rect(2*(w-40)/3+30,74,(w-40)/3,h-84);
-    if(sqrt(pow(mouseX-w/2,2)+pow(mouseY-2*h/3,2))<(w-40)/30){fill(229,225,45);}
+    if(dark && sqrt(pow(mouseX-w/2,2)+pow(mouseY-2*h/3,2))<(w-40)/30){fill(201,197,36);}
+    else if(sqrt(pow(mouseX-w/2,2)+pow(mouseY-2*h/3,2))<(w-40)/30 || dark){fill(229,225,45);}
     else{fill(255,251,50);}
     stroke(0);
     ellipse(w/2,2*h/3,(w-40)/15,(w-40)/15);
@@ -72,8 +69,8 @@ function draw(){
     noStroke();
     fill(0);
     textSize((w-40)/80)
-    text(daBucks+' aBucks',w/2,h/5+h/38);
-    text(daps+' aBucks per second',w/2,3*h/10+h/38);
+    text(aBucks+' aBucks',w/2,h/5+h/38);
+    text(aps+' aBucks per second',w/2,3*h/10+h/38);
     textSize((w-40)/45);
     text('POWERUPS',w-10-(w-40)/6,h/5-h/30);
   }
