@@ -1,4 +1,4 @@
-console.log(1);
+console.log(2);
 let mT = (window.innerHeight-600)/2; //margin top
 let mL = (window.innerWidth-600)/2; //margin left
 function inCircle(mx,my,x,y,r){
@@ -13,6 +13,6 @@ function setup(){
 }
 function draw(){
   background(250);
-  fill();
-  ellipse
+  fill(185,244,66);
+  ellipse(300,300,100,100);
 }
