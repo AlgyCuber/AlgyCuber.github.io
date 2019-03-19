@@ -1,4 +1,4 @@
-console.log(7);
+console.log(8);
 let mT = (window.innerHeight-600)/2; //margin top
 let mL = (window.innerWidth-600)/2; //margin left
 let s = 0; // screen
@@ -26,4 +26,7 @@ function draw(){
     fill(242);
     triangle(326.25,300,281.25,300-15*sqrt(3),281.25,300+15*sqrt(3));
   }
+}
+function mousePressed(){
+  if(s==0 && inCircle(mouseX,mouseY,300,300,50)){s = 1;}
 }
