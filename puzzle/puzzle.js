@@ -1,4 +1,4 @@
-console.log(13);
+console.log(14);
 let mT = (window.innerHeight-600)/2; //margin top
 let mL = (window.innerWidth-600)/2; //margin left
 let s = 0; //screen
@@ -33,13 +33,15 @@ function draw(){
     triangle(326.25,300,281.25,300-15*sqrt(3),281.25,300+15*sqrt(3));
   }
   else if(s==1){
+    fill(200);
+    rect(0,0,600,70);
     if(inRect(mouseX,mouseY,284,384,32,32)){fill(226,221,70);}
     else{fill(242,236,75);}
     rect(284,384,32,32);
     strokeWeight(3);
     if(inf.w1l1.light){stroke(255,0,0);}
     else{stroke(0);}
-    line(300,116,300,400);
+    line(300,116,300,384);
     stroke(0);
     strokeWeight(1);
     if(inf.w1l1.light){fill(35,222,255);}
@@ -49,5 +51,5 @@ function draw(){
 }
 function mousePressed(){
   if(s==0 && inCircle(mouseX,mouseY,300,300,50)){s = 1;}
-  else if(s==1 && inRect(mouseX,mouseY,284,384,32,32) && !inf.w1l1.light){w1l1.light = true;}
+  else if(s==1 && inRect(mouseX,mouseY,284,384,32,32) && !inf.w1l1.light){inf.w1l1.light = true;}
 }
