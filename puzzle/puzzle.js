@@ -1,4 +1,4 @@
-console.log(5);
+console.log(6);
 let mT = (window.innerHeight-600)/2; //margin top
 let mL = (window.innerWidth-600)/2; //margin left
 function inCircle(mx,my,x,y,r){
@@ -10,12 +10,12 @@ function setup(){
   defaultCanvas0.style.position = 'absolute';
   defaultCanvas0.style.top = mT+'px';
   defaultCanvas0.style.left = mL+'px';
-  defaultCanvas0.style.border = '1px';
+  defaultCanvas0.style.border = '1px solid';
 }
 function draw(){
   background(250);
   fill(185,244,66);
   ellipse(300,300,100,100);
   fill(242);
-  triangle(322.5,300,277.5,300-15*sqrt(3),277.5,300+15*sqrt(3));
+  triangle(326.25,300,281.25,300-15*sqrt(3),281.25,300+15*sqrt(3));
 }
