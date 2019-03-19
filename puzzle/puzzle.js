@@ -1,4 +1,4 @@
-console.log(16);
+console.log(17);
 let mT = (window.innerHeight-600)/2; //margin top
 let mL = (window.innerWidth-600)/2; //margin left
 let s = 0; //screen
@@ -39,7 +39,7 @@ function draw(){
     stroke(0);
     if(inRect(mouseX,mouseY,284,484,32,32)){fill(226,221,70);}
     else{fill(242,236,75);}
-    rect(384,484,32,32);
+    rect(284,484,32,32);
     strokeWeight(3);
     if(inf.w1l1.light){stroke(255,0,0);}
     else{stroke(0);}
