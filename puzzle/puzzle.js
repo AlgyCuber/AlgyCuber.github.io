@@ -1,4 +1,4 @@
-console.log(15);
+console.log(16);
 let mT = (window.innerHeight-600)/2; //margin top
 let mL = (window.innerWidth-600)/2; //margin left
 let s = 0; //screen
@@ -22,7 +22,7 @@ function draw(){
   background(250);
   //mouse
   if(s==0 && inCircle(mouseX,mouseY,300,300,50)){document.body.style.cursor = 'pointer';}
-  else if(s==1 && inRect(mouseX,mouseY,284,384,32,32) && !inf.w1l1.light){document.body.style.cursor = 'pointer';}
+  else if(s==1 && inRect(mouseX,mouseY,284,484,32,32)){document.body.style.cursor = 'pointer';}
   else{document.body.style.cursor = 'default';}
   //layout
   if(s==0){
@@ -34,24 +34,27 @@ function draw(){
   }
   else if(s==1){
     noStroke();
-    fill(200);
-    rect(0,0,600,70);
+    fill(220);
+    rect(0,0,600,60);
     stroke(0);
-    if(inRect(mouseX,mouseY,284,384,32,32)){fill(226,221,70);}
+    if(inRect(mouseX,mouseY,284,484,32,32)){fill(226,221,70);}
     else{fill(242,236,75);}
-    rect(284,384,32,32);
+    rect(384,484,32,32);
     strokeWeight(3);
     if(inf.w1l1.light){stroke(255,0,0);}
     else{stroke(0);}
-    line(300,116,300,384);
+    line(300,216,300,484);
     stroke(0);
     strokeWeight(1);
     if(inf.w1l1.light){fill(35,222,255);}
     else{fill(21,90,155);}
-    ellipse(300,100,32,32);
+    ellipse(300,200,32,32);
   }
 }
 function mousePressed(){
   if(s==0 && inCircle(mouseX,mouseY,300,300,50)){s = 1;}
-  else if(s==1 && inRect(mouseX,mouseY,284,384,32,32) && !inf.w1l1.light){inf.w1l1.light = true;}
+  else if(s==1 && inRect(mouseX,mouseY,284,484,32,32)){
+    if(inf.w1l1.light){inf.w1l1.light = false;}
+    else{inf.w1l1.light = true;}
+  }
 }
