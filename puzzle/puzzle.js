@@ -1,10 +1,12 @@
-console.log(8);
+console.log(9);
 let mT = (window.innerHeight-600)/2; //margin top
 let mL = (window.innerWidth-600)/2; //margin left
-let s = 0; // screen
+let s = 0; //screen
 function inCircle(mx,my,x,y,r){
-  if(sqrt(pow(mx-x,2)+pow(my-y,2))<r){return true;}
-  else{return false;}
+  return (sqrt(pow(mx-x,2)+pow(my-y,2))<r);
+}
+function inRect(mx,my,x,y,w,h){
+  return (mx>x && mx<x+w && my>y && my<y+h);
 }
 function setup(){
   createCanvas(600,600);
@@ -25,6 +27,11 @@ function draw(){
     ellipse(300,300,100,100);
     fill(242);
     triangle(326.25,300,281.25,300-15*sqrt(3),281.25,300+15*sqrt(3));
+  }
+  else if(s==1){
+    if(inRect(284,384,32,32)){fill(226,221,70);}
+    else{fill(242,236,75);}
+    rect(284,384,32,32);
   }
 }
 function mousePressed(){
