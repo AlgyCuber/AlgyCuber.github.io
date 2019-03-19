@@ -1,4 +1,4 @@
-console.log(12);
+console.log(13);
 let mT = (window.innerHeight-600)/2; //margin top
 let mL = (window.innerWidth-600)/2; //margin left
 let s = 0; //screen
@@ -22,7 +22,7 @@ function draw(){
   background(250);
   //mouse
   if(s==0 && inCircle(mouseX,mouseY,300,300,50)){document.body.style.cursor = 'pointer';}
-  else if(s==1 && inRect(mouseX,mouseY,284,384,32,32) && !w1l1.light){document.body.style.cursor = 'pointer';}
+  else if(s==1 && inRect(mouseX,mouseY,284,384,32,32) && !inf.w1l1.light){document.body.style.cursor = 'pointer';}
   else{document.body.style.cursor = 'default';}
   //layout
   if(s==0){
@@ -44,7 +44,7 @@ function draw(){
     strokeWeight(1);
     if(inf.w1l1.light){fill(35,222,255);}
     else{fill(21,90,155);}
-    ellipse(100,300,32,32);
+    ellipse(300,100,32,32);
   }
 }
 function mousePressed(){
