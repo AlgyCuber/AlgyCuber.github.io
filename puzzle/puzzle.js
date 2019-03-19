@@ -1,4 +1,4 @@
-console.log(4);
+console.log(5);
 let mT = (window.innerHeight-600)/2; //margin top
 let mL = (window.innerWidth-600)/2; //margin left
 function inCircle(mx,my,x,y,r){
@@ -17,5 +17,5 @@ function draw(){
   fill(185,244,66);
   ellipse(300,300,100,100);
   fill(242);
-  triangle(330,300,285,300-15*sqrt(3),285,300+15*sqrt(3));
+  triangle(322.5,300,277.5,300-15*sqrt(3),277.5,300+15*sqrt(3));
 }
