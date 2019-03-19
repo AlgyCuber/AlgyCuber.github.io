@@ -1,4 +1,4 @@
-console.log(14);
+console.log(15);
 let mT = (window.innerHeight-600)/2; //margin top
 let mL = (window.innerWidth-600)/2; //margin left
 let s = 0; //screen
@@ -33,8 +33,10 @@ function draw(){
     triangle(326.25,300,281.25,300-15*sqrt(3),281.25,300+15*sqrt(3));
   }
   else if(s==1){
+    noStroke();
     fill(200);
     rect(0,0,600,70);
+    stroke(0);
     if(inRect(mouseX,mouseY,284,384,32,32)){fill(226,221,70);}
     else{fill(242,236,75);}
     rect(284,384,32,32);
