@@ -52,7 +52,17 @@ function draw(){
     noStroke();
     text('Level 1',300,30);
     if(inf.l1.over){
-      
+      beginShape();
+      vertex(550,20);
+      vertex(575,20);
+      vertex(570,15);
+      vertex(575,10);
+      vertex(590,30);
+      vertex(575,50);
+      vertex(570,45);
+      vertex(575,40);
+      vertex(550,40);
+      endShape(CLOSE);
     }
   }
 }
