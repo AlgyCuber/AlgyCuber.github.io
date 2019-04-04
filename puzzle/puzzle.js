@@ -26,7 +26,6 @@ function draw(){
   else{document.body.style.cursor = 'default';}
   //layout
   if(s==0){
-    noStroke();
     if(inCircle(mouseX,mouseY,300,300,50)){fill(164,216,58);}
     else{fill(185,244,66);}
     ellipse(300,300,100,100);
