@@ -16,7 +16,7 @@ function setup(){
   defaultCanvas0.style.top = mT+'px';
   defaultCanvas0.style.left = mL+'px';
   defaultCanvas0.style.border = '1px solid';
-  textAlign(CENTER);
+  textAlign(CENTER,CENTER);
   textSize(30);
 }
 function draw(){
