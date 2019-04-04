@@ -54,13 +54,13 @@ function draw(){
     if(inf.l1.over){
       beginShape();
       vertex(550,26);
-      vertex(575,26);
-      vertex(570,18);
-      vertex(575,10);
+      vertex(570,26);
+      vertex(562,18);
+      vertex(570,10);
       vertex(590,30);
-      vertex(575,50);
-      vertex(570,42);
-      vertex(575,34);
+      vertex(570,50);
+      vertex(562,42);
+      vertex(570,34);
       vertex(550,34);
       endShape(CLOSE);
     }
