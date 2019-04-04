@@ -41,12 +41,10 @@ function draw(){
     if(inRect(mouseX,mouseY,284,434,32,32)){fill(226,221,70);}
     else{fill(242,236,75);}
     rect(284,434,32,32);
-    strokeWeight(3);
     if(inf.l1.light){stroke(255,0,0);}
     else{stroke(0);}
     line(300,166,300,434);
     stroke(0);
-    strokeWeight(1);
     if(inf.l1.light){fill(35,222,255);}
     else{fill(21,90,155);}
     ellipse(300,150,32,32);
