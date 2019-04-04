@@ -17,6 +17,7 @@ function setup(){
   defaultCanvas0.style.left = mL+'px';
   defaultCanvas0.style.border = '1px solid';
   textAlign(CENTER);
+  textSize(15);
 }
 function draw(){
   background(250);
@@ -49,7 +50,7 @@ function draw(){
     if(inf.l1.light){fill(35,222,255);}
     else{fill(21,90,155);}
     ellipse(300,150,32,32);
-    text('Level 1',300,10);
+    text('Level 1',300,25);
     if(inf.l1.over){}
   }
 }
