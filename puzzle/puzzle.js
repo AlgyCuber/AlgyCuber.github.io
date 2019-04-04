@@ -53,15 +53,15 @@ function draw(){
     text('Level 1',300,30);
     if(inf.l1.over){
       beginShape();
-      vertex(550,20);
-      vertex(575,20);
-      vertex(570,15);
+      vertex(550,10+40/3);
+      vertex(575,10+40/3);
+      vertex(570,10+20/3);
       vertex(575,10);
       vertex(590,30);
       vertex(575,50);
-      vertex(570,45);
-      vertex(575,40);
-      vertex(550,40);
+      vertex(570,10+100/3);
+      vertex(575,10+80/3);
+      vertex(550,10+80/3);
       endShape(CLOSE);
     }
   }
