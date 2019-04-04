@@ -49,8 +49,11 @@ function draw(){
     else{fill(21,90,155);}
     ellipse(300,150,32,32);
     fill(0);
+    noStroke();
     text('Level 1',300,30);
-    if(inf.l1.over){}
+    if(inf.l1.over){
+      
+    }
   }
 }
 function mousePressed(){
