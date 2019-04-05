@@ -53,7 +53,7 @@ function draw(){
     noStroke();
     text('Level 1',300,30);
     if(inf.l1.over && inRect(mouseX,mouseY,540,0,60,60)){
-      fill(160);
+      fill(190);
       rect(540,0,60,60);
       fill(0);
     }
