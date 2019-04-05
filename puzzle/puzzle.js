@@ -24,6 +24,7 @@ function draw(){
   //mouse
   if(s==0 && inCircle(mouseX,mouseY,300,300,50)){document.body.style.cursor = 'pointer';}
   else if(s==1 && inRect(mouseX,mouseY,284,434,32,32)){document.body.style.cursor = 'pointer';}
+  else if(s==1 && inRect(mouseX,mosueY,540,0,60,60)){document.body.style.cursor = 'pointer';}
   else{document.body.style.cursor = 'default';}
   //layout
   if(s==0){
@@ -51,6 +52,11 @@ function draw(){
     fill(0);
     noStroke();
     text('Level 1',300,30);
+    if(inf.l1.over && inRect(mouseX,mouseY,540,0,60,60)){
+      fill(160);
+      rect(540,0,60,60);
+      fill(0);
+    }
     if(inf.l1.over){
       beginShape();
       vertex(550,26);
