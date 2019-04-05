@@ -59,18 +59,19 @@ function draw(){
     }
     if(inf.l1.over){
       beginShape();
-      vertex(550,26);
-      vertex(574,26);
-      vertex(566,18);
-      vertex(574,10);
+      vertex(550,10+8*sqrt(2));
+      vertex(570,10+8*sqrt(2));
+      vertex(570-8/sqrt(2),10+8/sqrt(2));
+      vertex(570,10);
       vertex(590,30);
-      vertex(574,50);
-      vertex(566,42);
-      vertex(574,34);
-      vertex(550,34);
+      vertex(570,50);
+      vertex(570,50-8/sqrt(2));
+      vertex(570,50-8*sqrt(2));
+      vertex(550,50-8*sqrt(2));
       endShape(CLOSE);
     }
   }
+  else if(s==2){}
 }
 function mousePressed(){
   if(s==0 && inCircle(mouseX,mouseY,300,300,50)){s = 1;}
@@ -81,4 +82,5 @@ function mousePressed(){
       inf.l1.over = true;
     }
   }
+  else if(s==1 && inRect(mouseX,mouseY,540,0,60,60)){s = 2;}
 }
