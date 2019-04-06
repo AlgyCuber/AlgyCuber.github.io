@@ -71,7 +71,9 @@ function draw(){
       endShape(CLOSE);
     }
   }
-  else if(s==2){}
+  else if(s==2){
+    noStroke();
+  }
 }
 function mousePressed(){
   if(s==0 && inCircle(mouseX,mouseY,300,300,50)){s = 1;}
