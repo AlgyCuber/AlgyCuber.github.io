@@ -60,12 +60,12 @@ function draw(){
     if(inf.l1.over){
       beginShape();
       vertex(550,22);
-      vertex(570,22));
+      vertex(570,22);
       vertex(570-8/sqrt(2),10+8/sqrt(2));
       vertex(570,10);
       vertex(590,30);
       vertex(570,50);
-      vertex(570,50-8/sqrt(2));
+      vertex(570-8/sqrt(2),50-8/sqrt(2));
       vertex(570,38);
       vertex(550,38);
       endShape(CLOSE);
