@@ -1,6 +1,6 @@
 let alg = 0; //0 = bubble
 function setup(){
-  createCanvas(windowWidth,windowHeight);
+  createCanvas(window.innerWidth,windowHeight);
 }
 function draw(){
   
