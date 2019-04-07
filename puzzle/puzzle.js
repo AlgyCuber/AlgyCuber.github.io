@@ -73,6 +73,8 @@ function draw(){
   }
   else if(s==2){
     noStroke();
+    fill(220);
+    rect(0,0,600,60);
   }
 }
 function mousePressed(){
