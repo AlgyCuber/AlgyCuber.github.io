@@ -1,7 +1,7 @@
 let alg = 0; //0 = bubble
 let sel;
 function setup(){
-  createCanvas(windowWidth,windowHeight);
+  createCanvas(window.innerWidth,window.innerHeight);
   defaultCanvas0.style.position = 'absolute';
   defaultCanvas0.style.top = '0px';
   defaultCanvas0.style.left = '0px';
