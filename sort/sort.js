@@ -6,7 +6,7 @@ function setup(){
   defaultCanvas0.style.top = '0px';
   defaultCanvas0.style.left = '0px';
   sel = createSelect();
-  sel.position(32,32);
+  sel.position(32,26);
   sel.option('Bubble Sort');
 }
 function draw(){
