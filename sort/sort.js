@@ -21,10 +21,10 @@ function draw(){
   fill(180);
   rect(0,0,width,64);
   noStroke();
-  if(inCircle(width-2,32,48)){fill(220);}
+  if(inCircle(width/2-32,32,48)){fill(220);}
   else{fill(255);}
-  ellipse(width/2-48,32,48,48);
-  if(inCircle(width+2,32,48)){fill(220);}
+  ellipse(width/2-32,32,48,48);
+  if(inCircle(width/2+32,32,48)){fill(220);}
   else{fill(255);}
-  ellipse(width/2+48,32,48,48);
+  ellipse(width/2+32,32,48,48);
 }
