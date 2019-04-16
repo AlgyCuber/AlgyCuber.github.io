@@ -18,13 +18,13 @@ function inCircle(x,y,d){
 function draw(){
   background(255);
   stroke(1);
-  fill(180);
+  fill(220);
   rect(0,0,width,64);
   noStroke();
-  if(inCircle(width/2-32,32,48)){fill(220);}
+  if(inCircle(width/2-32,32,48)){fill(240);}
   else{fill(255);}
   ellipse(width/2-32,32,48,48);
-  if(inCircle(width/2+32,32,48)){fill(220);}
+  if(inCircle(width/2+32,32,48)){fill(240);}
   else{fill(255);}
   ellipse(width/2+32,32,48,48);
 }
