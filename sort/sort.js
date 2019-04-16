@@ -38,6 +38,6 @@ function draw(){
   }
   else{
      fill(153,232,34);
-     tri(width/2+50,32,width/2+14,32-sqrt(3)/2,width/2+14,32+sqrt(3)/2);
+     triangle(width/2+50,32,width/2+14,32-sqrt(3)/2,width/2+14,32+sqrt(3)/2);
   }
 }
