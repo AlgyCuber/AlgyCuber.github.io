@@ -1,6 +1,7 @@
 let alg = 0; //0 = bubble
 let sel;
 let sorting = false;
+let g = [];
 function setup(){
   createCanvas(window.innerWidth,window.innerHeight);
   defaultCanvas0.style.position = 'absolute';
