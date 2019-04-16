@@ -37,7 +37,7 @@ function draw(){
     rect(width/2+35,20,8,24);
   }
   else{
-     fill(153,232,34);
+     fill(140,214,51);
      triangle(width/2+46,32,width/2+22,32-sqrt(3)/2*16,width/2+22,32+sqrt(3)/2*16);
   }
 }
