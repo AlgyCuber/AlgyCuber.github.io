@@ -33,11 +33,14 @@ function draw(){
   noStroke();
   if(sorting){
     fill(242,44,26);
-    rect(width/2+22,20,8,24);
-    rect(width/2+34,20,8,24);
+    rect(width/2+21,20,8,24);
+    rect(width/2+35,20,8,24);
   }
   else{
      fill(153,232,34);
      triangle(width/2+46,32,width/2+22,32-sqrt(3)/2*16,width/2+22,32+sqrt(3)/2*16);
   }
+}
+function mousePressed(){
+  if(inCircle(width/2+32,32,48)){sorting = (sorting)?false:true;}
 }
