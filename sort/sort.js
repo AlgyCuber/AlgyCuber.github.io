@@ -2,6 +2,7 @@ let alg = 0; //0 = bubble
 let sel;
 let sorting = false;
 let g = [];
+let sli;
 function setup(){
   createCanvas(window.innerWidth,window.innerHeight);
   defaultCanvas0.style.position = 'absolute';
@@ -10,6 +11,8 @@ function setup(){
   sel = createSelect();
   sel.position(32,24);
   sel.option('Bubble Sort');
+  sli = createSlider(10,2000,400);
+  sli.position(64+sel.width,24);
 }
 function inRect(x,y,w,h){
   return (mouseX>x && mouseX<x+w && mouseY>y && mouseY<y+h);
