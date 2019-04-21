@@ -12,7 +12,7 @@ function setup(){
   sel.position(32,24);
   sel.option('Bubble Sort');
   sli = createSlider(10,2000,400);
-  sli.position(64+sel.width,24);
+  sli.position(100,24);
   sli.style('background-color','#000000');
 }
 function inRect(x,y,w,h){
