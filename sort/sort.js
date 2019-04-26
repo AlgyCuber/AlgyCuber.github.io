@@ -4,6 +4,8 @@ let sorting = false;
 let g = [];
 let numinp;
 let numval = '';
+let numwarn = false;
+let numwarncnt = false;
 function setup(){
   createCanvas(window.innerWidth,window.innerHeight);
   defaultCanvas0.style.position = 'absolute';
@@ -14,6 +16,7 @@ function setup(){
   sel.option('Bubble Sort');
   numinp = createInput();
   numinp.position(150,24);
+  textAlign(CENTER,CENTER);
 }
 function inRect(x,y,w,h){
   return (mouseX>x && mouseX<x+w && mouseY>y && mouseY<y+h);
@@ -48,8 +51,21 @@ function draw(){
   fill(0);
   if(numinp.value().length==0){numval = '';}
   for(let i=0;i<numinp.value().length;i++){
-    if(!'0123456789'.includes(numinp.value()[i]) || Number(numinp.value())>2000){numinp.value(numval);}
+    if(!'0123456789'.includes(numinp.value()[i]) || Number(numinp.value())>2000){
+      numinp.value(numval);
+      numinpwarn = true;
+      numinpwarncnt = true;
+    }
     else if(i==numinp.value().length-1){numval = numinp.value();}
+  }
+  if(numinpwarn){
+    if(numinpwarncnt){
+      numinpwarncnt = false;
+      setTimeout(function(){numinpwarn = false;},3000)
+    }
+    fill(255,0,0);
+    textSize(12);
+    text('Number has to be between 20 ad 2000',150+numinp.width/2,48);
   }
 }
 function mousePressed(){
