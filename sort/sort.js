@@ -47,7 +47,7 @@ function draw(){
   }
   fill(0);
   textSize(8);
-  text(sli.value();+' Numbers',150,44);
+  text(sli.value()+' Numbers',150,44);
 }
 function mousePressed(){
   if(inCircle(width/2+32,32,48)){sorting = (sorting)?false:true;}
