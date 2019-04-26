@@ -11,7 +11,7 @@ function setup(){
   sel = createSelect();
   sel.position(32,24);
   sel.option('Bubble Sort');
-  sli = createSlider(10,2000,400);
+  sli = createSlider(50,width,400);
   sli.position(150,16);
   sli.style('background-color','#000000');
 }
