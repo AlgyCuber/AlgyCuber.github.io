@@ -47,7 +47,7 @@ function draw(){
   }
   fill(0);
   for(let i=0;i<numinp.value().length;i++){
-    if(!'0123456789'.includes(numinp.value()[i]) || (i==numinp.value().length-1 && (Number(numinp.value())<20 || Number(numinp.value())>2000))){numinp.value(numval);}
+    if(!'0123456789'.includes(numinp.value()[i]) || (i==numinp.value().length-1 && Number(numinp.value())>2000))){numinp.value(numval);}
     else{numval = numinp.value();}
   }
 }
