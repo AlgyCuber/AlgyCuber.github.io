@@ -46,7 +46,7 @@ function draw(){
      triangle(width/2+46,32,width/2+22,32-sqrt(3)/2*16,width/2+22,32+sqrt(3)/2*16);
   }
   fill(0);
-  if(numinp.value().length()==0){numval = '';}
+  if(numinp.value().length==0){numval = '';}
   for(let i=0;i<numinp.value().length;i++){
     if(!'0123456789'.includes(numinp.value()[i]) || Number(numinp.value())>2000){numinp.value(numval);}
     else{numval = numinp.value();}
