@@ -52,7 +52,7 @@ function draw(){
     console.log(numinp.value()[i]);
     console.log(numval)
     if(!'0123456789'.includes(numinp.value()[i]) || Number(numinp.value())>2000){numinp.value(numval);}
-    else{numval = numinp.value();}
+    else if(i==numinp.value().length-1){numval = numinp.value();}
   }
 }
 function mousePressed(){
