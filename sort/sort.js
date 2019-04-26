@@ -48,6 +48,8 @@ function draw(){
   fill(0);
   if(numinp.value().length==0){numval = '';}
   for(let i=0;i<numinp.value().length;i++){
+    console.log(!'0123456789'.includes(numinp.value()[i]));
+    console.log(numinp.value()[i]);
     if(!'0123456789'.includes(numinp.value()[i]) || Number(numinp.value())>2000){numinp.value(numval);}
     else{numval = numinp.value();}
   }
