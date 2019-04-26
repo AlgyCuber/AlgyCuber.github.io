@@ -46,8 +46,8 @@ function draw(){
      triangle(width/2+46,32,width/2+22,32-sqrt(3)/2*16,width/2+22,32+sqrt(3)/2*16);
   }
   fill(0);
-  for(let i=0;i<numinp.length;i++){
-    if(numinp[i]!=0){numinp.value(numval);}
+  for(let i=0;i<numinp.value().length;i++){
+    if(!'0123456789'.contains(numinp.value()[i])){numinp.value(numval);}
   }
 }
 function mousePressed(){
