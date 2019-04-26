@@ -2,7 +2,8 @@ let alg = 0; //0 = bubble
 let sel;
 let sorting = false;
 let g = [];
-let sli;
+let numinp = '';
+let numval;
 function setup(){
   createCanvas(window.innerWidth,window.innerHeight);
   defaultCanvas0.style.position = 'absolute';
@@ -11,9 +12,8 @@ function setup(){
   sel = createSelect();
   sel.position(32,24);
   sel.option('Bubble Sort');
-  sli = createSlider(50,width,400);
-  sli.position(150,16);
-  sli.style('background-color','#000000');
+  numinp = createInput();
+  numinp.position(150,24);
 }
 function inRect(x,y,w,h){
   return (mouseX>x && mouseX<x+w && mouseY>y && mouseY<y+h);
@@ -46,9 +46,9 @@ function draw(){
      triangle(width/2+46,32,width/2+22,32-sqrt(3)/2*16,width/2+22,32+sqrt(3)/2*16);
   }
   fill(0);
-  textSize(12);
-  textAlign(CENTER,CENTER);
-  text(sli.value()+' Numbers',214,44);
+  for(let i=0;i<numinp.length;i++){
+    if(![0,1,2,3,4,5,6,7,8,9].contains(numinp[i])){numinp.value(numval);}
+  }
 }
 function mousePressed(){
   if(inCircle(width/2+32,32,48)){sorting = (sorting)?false:true;}
