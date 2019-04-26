@@ -53,15 +53,15 @@ function draw(){
   for(let i=0;i<numinp.value().length;i++){
     if(!'0123456789'.includes(numinp.value()[i]) || Number(numinp.value())>2000){
       numinp.value(numval);
-      numinpwarn = true;
-      numinpwarncnt = true;
+      numwarn = true;
+      numwarncnt = true;
     }
     else if(i==numinp.value().length-1){numval = numinp.value();}
   }
-  if(numinpwarn){
-    if(numinpwarncnt){
-      numinpwarncnt = false;
-      setTimeout(function(){numinpwarn = false;},3000)
+  if(numwarn){
+    if(numwarncnt){
+      numwarncnt = false;
+      setTimeout(function(){numwarn = false;},3000)
     }
     fill(255,0,0);
     textSize(12);
