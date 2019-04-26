@@ -48,7 +48,7 @@ function draw(){
   fill(0);
   textSize(12);
   textAlign(CENTER,CENTER);
-  text(sli.value()+' Numbers',200,44);
+  text(sli.value()+' Numbers',214,44);
 }
 function mousePressed(){
   if(inCircle(width/2+32,32,48)){sorting = (sorting)?false:true;}
