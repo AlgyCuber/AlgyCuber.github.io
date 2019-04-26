@@ -47,6 +47,7 @@ function draw(){
   }
   fill(0);
   textSize(12);
+  textAlign(CENTER,CENTER);
   text(sli.value()+' Numbers',170,44);
 }
 function mousePressed(){
