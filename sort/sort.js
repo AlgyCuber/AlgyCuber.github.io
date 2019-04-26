@@ -46,8 +46,8 @@ function draw(){
      triangle(width/2+46,32,width/2+22,32-sqrt(3)/2*16,width/2+22,32+sqrt(3)/2*16);
   }
   fill(0);
-  textSize(8);
-  text(sli.value()+' Numbers',150,44);
+  textSize(12);
+  text(sli.value()+' Numbers',170,44);
 }
 function mousePressed(){
   if(inCircle(width/2+32,32,48)){sorting = (sorting)?false:true;}
