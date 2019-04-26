@@ -65,7 +65,7 @@ function draw(){
     }
     fill(255,0,0);
     textSize(11);
-    text('Number has to be between 20 ad 2000',150+numinp.width/2,54);
+    text('Number has to be between 20 and 2000',150+numinp.width/2,54);
   }
 }
 function mousePressed(){
