@@ -47,7 +47,7 @@ function draw(){
   }
   fill(0);
   for(let i=0;i<numinp.value().length;i++){
-    if(!'0123456789'.contains(numinp.value()[i])){numinp.value(numval);}
+    if(!'0123456789'.includes(numinp.value()[i])){numinp.value(numval);}
   }
 }
 function mousePressed(){
