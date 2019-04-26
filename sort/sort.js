@@ -64,8 +64,8 @@ function draw(){
       setTimeout(function(){numwarn = false;},3000)
     }
     fill(255,0,0);
-    textSize(12);
-    text('Number has to be between 20 ad 2000',150+numinp.width/2,48);
+    textSize(9);
+    text('Number has to be between 20 ad 2000',150+numinp.width/2,58);
   }
 }
 function mousePressed(){
