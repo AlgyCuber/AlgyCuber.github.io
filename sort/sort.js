@@ -69,7 +69,7 @@ function draw(){
   }
   fill(0);
   textSize(16);
-  text('Numbers',182+numinp.width,32);
+  text('Numbers',190+numinp.width,36);
 }
 function mousePressed(){
   if(inCircle(width/2+32,32,48)){sorting = (sorting)?false:true;}
