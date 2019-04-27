@@ -67,6 +67,9 @@ function draw(){
     textSize(11);
     text('Number has to be between 20 and 2000',150+numinp.width/2,54);
   }
+  fill(0);
+  textSize(16);
+  text('Numbers',182+numinp.width,32);
 }
 function mousePressed(){
   if(inCircle(width/2+32,32,48)){sorting = (sorting)?false:true;}
