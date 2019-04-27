@@ -16,6 +16,7 @@ function setup(){
   sel.option('Bubble Sort');
   numinp = createInput();
   numinp.position(150,24);
+  numinp.value(400);
   textAlign(CENTER,CENTER);
 }
 function inRect(x,y,w,h){
