@@ -19,7 +19,7 @@ function setup(){
   numinp.position(150,24);
   numinp.value(400);
   textAlign(CENTER,CENTER);
-  pulse = new p5.pulse();
+  pulse = new p5.Pulse();
   pulse.amp(0.05);
   pulse.freq(220);
 }
