@@ -6,7 +6,6 @@ let numinp;
 let numval = '';
 let numwarn = false;
 let numwarncnt = false;
-let pulse;
 function setup(){
   createCanvas(window.innerWidth,window.innerHeight);
   defaultCanvas0.style.position = 'absolute';
@@ -19,9 +18,6 @@ function setup(){
   numinp.position(150,24);
   numinp.value(400);
   textAlign(CENTER,CENTER);
-  pulse = new p5.Pulse();
-  pulse.amp(0.05);
-  pulse.freq(220);
 }
 function inRect(x,y,w,h){
   return (mouseX>x && mouseX<x+w && mouseY>y && mouseY<y+h);
@@ -75,10 +71,6 @@ function draw(){
   fill(0);
   textSize(16);
   text('Numbers',190+numinp.width,36);
-  if(sorting){
-    pulse.start();
-  }
-  else{pulse.stop();}
 }
 function mousePressed(){
   if(inCircle(width/2+32,32,48)){sorting = (sorting)?false:true;}
