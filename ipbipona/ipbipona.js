@@ -17,8 +17,8 @@ function draw(){
 	else if(tVal.substring(tVal.length-2,tVal.length)=='ʀ\;'){t.value = t.value.substring(0,t.value.length-2)+'ŕ';}
 	else if(tVal.substring(tVal.length-2,tVal.length)=='r\;'){t.value = t.value.substring(0,t.value.length-2)+'ř';}
 	else if(tVal[tVal.length-1]=='R'){t.value = t.value.substring(0,t.value.length-1)+'ʀ';}
-	else if(tVal[tVal.length-1]=='b'){t.value = t.value.substring(0,t.value.length-1)+'ʙ';}
-	else if(tVal[tVal.length-1]=='p'){t.value = t.value.substring(0,t.value.length-1)+'ᴘ';}
+	else if(tVal[tVal.length-1]=='B'){t.value = t.value.substring(0,t.value.length-1)+'ʙ';}
+	else if(tVal[tVal.length-1]=='P'){t.value = t.value.substring(0,t.value.length-1)+'ᴘ';}
 	else if(tVal[tVal.length-1]=='V'){t.value = t.value.substring(0,t.value.length-1)+'ʌ';}
 	else if(tVal[tVal.length-1]=='F'){t.value = t.value.substring(0,t.value.length-1)+'ɟ';}
 	else if(tVal[tVal.length-1]=='Z'){t.value = t.value.substring(0,t.value.length-1)+'ž';}
