@@ -22,5 +22,5 @@ function draw(){
 	else if(tVal[tVal.length-1]=='V'){t.value = t.value.substring(0,t.value.length-1)+'ʌ';}
 	else if(tVal[tVal.length-1]=='F'){t.value = t.value.substring(0,t.value.length-1)+'ɟ';}
 	else if(tVal[tVal.length-1]=='Z'){t.value = t.value.substring(0,t.value.length-1)+'ž';}
-	else if(tVal[tVal.length-1]=='S'){t.value = t.value.substring(0,t.value.length-1)+'š';}.
+	else if(tVal[tVal.length-1]=='S'){t.value = t.value.substring(0,t.value.length-1)+'š';}
 }
