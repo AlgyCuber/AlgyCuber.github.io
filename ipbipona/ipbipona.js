@@ -13,7 +13,7 @@ function draw(){
 	else if(tVal[tVal.length-1]=='T'){t.value = t.value.substring(0,t.value.length-1)+'ᴛ';}
 	else if(tVal.substring(tVal.length-2,tVal.length)=='t\;'){t.value = t.value.substring(0,t.value.length-2)+'þ';}
 	else if(tVal[tVal.length-1]=='L'){t.value = t.value.substring(0,t.value.length-1)+'ʟ';}
-	else if(tVal.substring(tVal.length-2,tVal.length)=='l\;'){t.value = t.value.substring(0,t.value.length-2)+'ɬ';}
+	else if(tVal.substring(tVal.length-2,tVal.length)=='ʟ\;'){t.value = t.value.substring(0,t.value.length-2)+'ɬ';}
 	else if(tVal.substring(tVal.length-2,tVal.length)=='ʀ\;'){t.value = t.value.substring(0,t.value.length-2)+'ŕ';}
 	else if(tVal.substring(tVal.length-2,tVal.length)=='r\;'){t.value = t.value.substring(0,t.value.length-2)+'ř';}
 	else if(tVal[tVal.length-1]=='R'){t.value = t.value.substring(0,t.value.length-1)+'ʀ';}
@@ -23,4 +23,5 @@ function draw(){
 	else if(tVal[tVal.length-1]=='F'){t.value = t.value.substring(0,t.value.length-1)+'ꜰ';}
 	else if(tVal[tVal.length-1]=='Z'){t.value = t.value.substring(0,t.value.length-1)+'ž';}
 	else if(tVal[tVal.length-1]=='S'){t.value = t.value.substring(0,t.value.length-1)+'š';}
+	else if(tVal[tVal.length-1]=='l;'){t.value = t.value.substring(0,t.value.length-1)+'ĺ';}
 }
