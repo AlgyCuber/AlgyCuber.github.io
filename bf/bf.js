@@ -122,16 +122,6 @@ function draw(){
 		op.style.display = 'block';
 		ip.style.display = 'block';
 	}
-	///
-	if(run){
-		if(code[rpos]=='+'){p.add();}
-		else if(code[rpos]=='-'){p.sub();}
-		else if(code[rpos]=='<'){p.shl();}
-		else if(code[rpos]=='>'){p.shr();}
-		else if(code[rpos]=='['){p.bgl();}
-		else if(code[rpos]==']'){p.enl();}
-		else if(code[rpos]=='.'){p.dis();}
-	}
 }
 function mousePressed(){
 	if(mouseX>40 && mouseX<140 && mouseY>200 && mouseY<240){
