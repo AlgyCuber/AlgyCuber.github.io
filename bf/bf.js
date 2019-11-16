@@ -23,7 +23,15 @@ let p = {
 		else{pos++;}
 	},
 	bgl:function(){
-		let b = 0;
+		if(g[pos]==0){
+			let b = 0;
+			while(rpos<code.length){
+				if(code[rpos]=='['){b++;}
+				else if(code[rpos]==']'){b--;}
+				rpos++;
+				if(b==0){break;}
+			}
+		}
 	},
 	enl:function(){
 		if(pos==2047){pos = 0;}
