@@ -45,7 +45,7 @@ let p = {
 		}
 	},
 	dis:function(){
-		op.value += String.fromCharCode(g[rpos]);
+		op.value += String.fromCharCode(g[pos]);
 	}
 };
 function setup(){
@@ -74,6 +74,7 @@ function setup(){
 	createCanvas(1000,1200);
 	textAlign(CENTER,CENTER);
 	for(let i=0;i<2048;i++){g.push(0);}
+    frameRate(1000);
 }
 function draw(){
 	background(255);
@@ -114,7 +115,27 @@ function draw(){
 				else{fill(255);}
 				rect(20+j*30,270+i*30,30,30);
 				fill(0);
-				text(g[i*32+j],36+j*30,286+i*30);
+                if(hex){
+                    let s = '';
+                    let h = Math.floor(g[i*32+j]/16);
+                    if(h<10){s += h;}
+                    else if(h==10){s += 'A';}
+                    else if(h==11){s += 'B';}
+                    else if(h==12){s += 'C';}
+                    else if(h==13){s += 'D';}
+                    else if(h==14){s += 'E';}
+                    else if(h==15){s += 'F';}
+                    h = g[i*32+j]%16;
+                    if(h<10){s += h;}
+                    else if(h==10){s += 'A';}
+                    else if(h==11){s += 'B';}
+                    else if(h==12){s += 'C';}
+                    else if(h==13){s += 'D';}
+                    else if(h==14){s += 'E';}
+                    else if(h==15){s += 'F';}
+                    text(s,36+j*30,286+i*30);
+                }
+				else{text(g[i*32+j],36+j*30,286+i*30);}
 			}
 		}
 	}
@@ -144,6 +165,8 @@ function mousePressed(){
 		for (let i=0;i<2048;i++){
 			g[i] = 0;
 		}
+        op.value = '';
+        pos = 0;
 		if(run){run = false;}
 		else{run = true;}
 		for(let i=0;i<tf.value.length;i++){
