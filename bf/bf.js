@@ -35,7 +35,7 @@ function setup(){
 	///
 	createCanvas(1000,1200);
 	textAlign(CENTER,CENTER);
-	for(i in g){g[i] = 0;}
+	for(i of g){g[i] = 0;}
 }
 function draw(){
 	background(255);
