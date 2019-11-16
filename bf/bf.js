@@ -34,8 +34,18 @@ let p = {
 		}
 	},
 	enl:function(){
-		if(pos==2047){pos = 0;}
-		else{pos++;}
+		if(g[pos]!=0){
+			let b = 0;
+			while(rpos>=0){
+				if(code[rpos]=='['){b++;}
+				else if(code[rpos]==']'){b--;}
+				rpos--;
+				if(b==0){break;}
+			}
+		}
+	},
+	dis:function(){
+		op.value += String.fromCharCode(g[rpos]);
 	}
 };
 function setup(){
@@ -111,6 +121,16 @@ function draw(){
 	else{
 		op.style.display = 'block';
 		ip.style.display = 'block';
+	}
+	///
+	if(run){
+		if(code[rpos]=='+'){p.add();}
+		else if(code[rpos]=='-'){p.sub();}
+		else if(code[rpos]=='<'){p.shl();}
+		else if(code[rpos]=='>'){p.shr();}
+		else if(code[rpos]=='['){p.bgl();}
+		else if(code[rpos]==']'){p.enl();}
+		else if(code[rpos]=='.'){p.dis();}
 	}
 }
 function mousePressed(){
