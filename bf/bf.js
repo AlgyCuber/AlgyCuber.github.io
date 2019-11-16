@@ -77,6 +77,7 @@ function draw(){
 	///
 	if(cells){
 		op.style.display = 'none';
+		ip.style.display = 'none';
 		textSize(12);
 		stroke(0);
 		for(let i=0;i<16;i++){
@@ -89,7 +90,10 @@ function draw(){
 			}
 		}
 	}
-	else{op.style.display = 'block';}
+	else{
+		op.style.display = 'block';
+		ip.style.display = 'block';
+	}
 }
 function mousePressed(){
 	if(mouseX>40 && mouseX<140 && mouseY>200 && mouseY<240){
