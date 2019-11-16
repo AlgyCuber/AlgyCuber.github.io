@@ -15,11 +15,11 @@ let p = {
 		else{g[pos]--;}
 	},
 	shl:function(){
-		if(pos==0){pos = 2047;}
+		if(pos==0){pos = 511;}
 		else{pos--;}
 	},
 	shr:function(){
-		if(pos==2047){pos = 0;}
+		if(pos==511){pos = 0;}
 		else{pos++;}
 	},
 	bgl:function(){
@@ -73,7 +73,7 @@ function setup(){
 	///
 	createCanvas(1000,1200);
 	textAlign(CENTER,CENTER);
-	for(let i=0;i<2048;i++){g.push(0);}
+	for(let i=0;i<512;i++){g.push(0);}
     frameRate(1000);
 }
 function draw(){
@@ -162,7 +162,7 @@ function draw(){
 function mousePressed(){
 	if(mouseX>40 && mouseX<140 && mouseY>200 && mouseY<240){
 		code = '';
-		for (let i=0;i<2048;i++){
+		for (let i=0;i<512;i++){
 			g[i] = 0;
 		}
         op.value = '';
