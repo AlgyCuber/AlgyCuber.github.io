@@ -1,4 +1,3 @@
-console.log('hi');
 let code = '';
 let g = [];
 let run = false;
