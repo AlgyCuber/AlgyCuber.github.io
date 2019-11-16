@@ -141,7 +141,7 @@ function draw(){
 function mousePressed(){
 	if(mouseX>40 && mouseX<140 && mouseY>200 && mouseY<240){
 		code = '';
-		for (i of g){
+		for (let i=0;i<2048;i++){
 			g[i] = 0;
 		}
 		if(run){run = false;}
