@@ -141,6 +141,9 @@ function draw(){
 function mousePressed(){
 	if(mouseX>40 && mouseX<140 && mouseY>200 && mouseY<240){
 		code = '';
+		for (i of g){
+			g[i] = 0;
+		}
 		if(run){run = false;}
 		else{run = true;}
 		for(let i=0;i<tf.value.length;i++){
