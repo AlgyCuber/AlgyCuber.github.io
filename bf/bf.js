@@ -131,6 +131,11 @@ function draw(){
 		else if(code[rpos]=='['){p.bgl();}
 		else if(code[rpos]==']'){p.enl();}
 		else if(code[rpos]=='.'){p.dis();}
+		if(rpos==code.length-1){
+			run = false;
+			rpos = 0;
+		}
+		else{rpos++;}
 	}
 }
 function mousePressed(){
