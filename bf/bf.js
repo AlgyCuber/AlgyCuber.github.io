@@ -1,5 +1,5 @@
 let code = '';
-let g = Array(2048);
+let g = [];
 let run = false;
 let pos = 0;
 let cells = false;
@@ -35,7 +35,7 @@ function setup(){
 	///
 	createCanvas(1000,1200);
 	textAlign(CENTER,CENTER);
-	for(i in g){g[i] = 0;}
+	for(let i=0;i<2048;i++){g.push(0);}
 }
 function draw(){
 	background(255);
