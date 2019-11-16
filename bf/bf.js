@@ -4,10 +4,30 @@ let run = false;
 let pos = 0;
 let cells = false;
 let hex = false;
+let rpos = 0;
 let p = {
 	add:function(){
 		if(g[pos]==255){g[pos] = 0;}
 		else{g[pos]++;}
+	},
+	sub:function(){
+		if(g[pos]==0){g[pos] = 255;}
+		else{g[pos]--;}
+	},
+	shl:function(){
+		if(pos==0){pos = 2047;}
+		else{pos--;}
+	},
+	shr:function(){
+		if(pos==2047){pos = 0;}
+		else{pos++;}
+	},
+	bgl:function(){
+		let b = 0;
+	},
+	enl:function(){
+		if(pos==2047){pos = 0;}
+		else{pos++;}
 	}
 };
 function setup(){
