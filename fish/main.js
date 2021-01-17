@@ -27,7 +27,7 @@ setInterval(function(){
       else if(parsed[y][x] == '#'){dx *= -1; dy *= -1;}
       else if(parsed[y][x] == 'x'){
         dx = Math.round(Math.random()*2-1);
-        dy = (dx == 0 ? Math.round(Math.random()) : 0);
+        dy = (dx == 0 ? Math.round(Math.random())*2-1 : 0);
       }
       else if(parsed[y][x] == '!'){x += dx; y += dy;}
       else if(parsed[y][x] == '?'){
