@@ -1,4 +1,5 @@
 let g, x, y, dx, dy, parsed, singleQuote, doubleQuote, n, reg;
+let key = 0;
 let running = false;
 setInterval(function(){
   if(running){run.innerHTML = 'Stop';}
@@ -98,7 +99,12 @@ setInterval(function(){
     x += dx; y += dy;
   }
   else{
-    if(userinp.value!=''){
+    if(key == 13){
+      g[n].push(10);
+      userinp.readOnly = true;
+      key = 0;
+    }
+    else if(userinp.value!=''){
       g[n].push(userinp.value.charCodeAt(0));
       userinp.readOnly = true;
       userinp.value = '';
@@ -117,5 +123,10 @@ run.addEventListener('click',function(){
     for(let j in parsed){
       parsed[j] = parsed[j].split('');
     }
+  }
+});
+window.addEventListener('keydown',function(e){
+  if(!userinp.readOnly){
+    if(e.keyCode == 13){key = 13;}
   }
 });
