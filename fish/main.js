@@ -117,7 +117,7 @@ run.addEventListener('click',function(){
     running = true;
     singleQuote = false;
     doubleQuote = false;
-    g = [[]]; x = 0; y = 0; dx = 1; dy = 0; n = 0, reg = [];
+    g = [[]]; x = 0; y = 0; dx = 1; dy = 0; n = 0; reg = [];
     oup.value = '';
     parsed = inp.value.split('\n');
     for(let j in parsed){
